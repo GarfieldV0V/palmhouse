@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="CSS/base.css">
+        <link rel="stylesheet" href="CSS/style.css">
+
+        <script src="js/jquery-1.12.4.js"></script> 
+        <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=W0jb_byaKXQoldq1suXz&submodules=geocoder"></script>
+        <link rel="stylesheet" href="css/jquery.bxslider.css">
+        <script src="js/jquery.bxslider.js"></script>
+
+        <script>
+            $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true, /* 슬라이드 자동적으로 움직이게 하는 구성 */
+            });
+            });
+        </script>
+
+
+    <title>Palm House</title>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <header>
+                <div id="headerIn">
+
+                    <h1 class="logo">
+                        <a href="index.html"></a>
+                        <img src="images/logo.png" alt="로고">
+                    </h1>
+
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">ROOMS</a></li>
+                        <li><a href="#">SPECIAL</a></li>
+                        <li><a href="#">TOUR</a></li>
+                        <li><a href="#">RESERVE</a></li>
+                        <li><a href="#">BOARD</a></li>  
+                        <li><a href="#"><p>실시간예약현황</p></a></li>                                        
+                    </ul>
+                </nav>
+
+                </div> <!-- #headerIn -->
+            </header>
+
+            <main>
+                <div id="page1">
+                    <div class="center">
+                        <ul>
+                            <li><img src="images/conts01.jpg" alt="image"></li>
+                            <li><img src="images/logo.png" alt="logo"></li>
+                            <li><p>사랑하는 사람과 아름다운 시간이 되도록,<br>
+                                    편안하고 아늑한 공간을 선사합니다.</p></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div id="page2">
+                    <ul class="slider">
+                        <li><img src="images/image01.jpg" alt=""></a></li>
+                        <li><img src="images/image02.jpg" alt=""></a></li>
+                        <li><img src="images/image03.jpg" alt=""></a></li>
+                        <li><img src="images/image04.jpg" alt=""></a></li>
+                        <li><img src="images/image05.jpg" alt=""></a></li>
+                        <li><img src="images/image06.jpg" alt=""></a></li>
+                    </ul>                
+                </div>
+
+                <div id="page3">
+                    <div id="conts">
+                        <div class="conts1">
+                            <ul>
+                                <li><p>오시는길</p></li>
+                                <div id="map">
+                            </ul>
+                        </div>
+
+                        <div class="conts2">
+                            <ul>
+                                <li>
+                                    <div class="left_text">
+                                    <p class="cont2_tit">간절곶 팜하우스</p>
+                                    <p class="cont2_addr">울산광역시 울주군 서생면 간절곶2길 14번길(대송리 212-1번지)</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="right_btn">
+                                    <a href="#" class="btn1"><span>길찾기</span></a>
+                                    <a href="#" class="btn2"><span>지도에서 찾기</span></a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="conts3">                
+                            <ul>
+                                <li>
+                                    <div class="conts3_left">
+                                        <span class="load_icon"></span>
+                                        <p>오시는길</p>
+                                    </div>
+                                </li>    
+            
+                                <li>
+                                    <div class="conts3_right">
+                                    <p>*차량 이용시 예약문자 내, 주소 찍고 오시면 됩니다.  *대중교통 이용시 일반 715번, 405번 탑승 → '간절곶'정류장 하차 → 도보5분</p>
+                                    </div>                         
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="conts4">
+                            <ul>
+                                <li>
+                                    <div class="conts4_left">
+                                        <span class="call_icon"></span>
+                                        <p>전화번호</p>
+                                    </div>
+                                </li>
+            
+                                <li>
+                                    <div class="conts4_right">
+                                        <p>010-7251-8811</p> 
+                                    </div>                         
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="conts5">
+                            <ul>
+                                <li>
+                                    <div class="conts5_left">
+                                        <span class="info_icon"></span>
+                                        <p>이용안내</p>
+                                    </div>    
+                                </li>                            
+
+                                <li>
+                                   <div class="conts5_right">
+                                       <ul>
+                                           <li>                                              
+                                                <div class="BBQ">
+                                                <a href="#">
+                                                    <span class="BBQ_icon"></span>
+                                                    <p>바비큐장</p>
+                                                </a>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="wifi">
+                                                    <a href="#">
+                                                        <span class="wifi_icon"></span>
+                                                        <p>와이파이</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="couple">
+                                                    <a href="#">
+                                                        <span class="couple_icon"></span>
+                                                        <p>2인실</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="singleBBQ">
+                                                    <a href="#">
+                                                        <span class="singleBBQ_icon"></span>
+                                                        <p>개별바비큐</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="singlehouse">
+                                                    <a href="#">
+                                                        <span class="singlehouse_icon"></span>
+                                                        <p>독채</p>
+                                                    </a>
+                                                </div>                                            
+                                            </li>
+        
+                                            <li>
+                                                <div class="jacuzi">
+                                                    <a href="#">
+                                                        <span class="jacuzi_icon"></span>
+                                                        <p>자쿠지</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+        
+                                            <li>
+                                                <div class="garden">
+                                                    <a href="#">
+                                                        <span class="garden_icon"></span>
+                                                        <p>정원</p>
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul> 
+                                    </div>
+                                </li> 
+                            </ul>           
+                        </div> 
+                    </div>
+                </div>    
+                
+                <div id="page4">
+                    <div id="page4_conts">
+                        <div class="gallery_text">
+                            <ul>
+                                <li>
+                                    <p>이미지 갤러리</p>
+                                </li>
+                            </ul>
+                        </div> 
+                    
+                        <div class="image_gallery">
+                            <ul>
+                                <li>
+                                    <div class="gallery01">                                        
+                                        <a href="#">
+                                            <img src="images/gallery_01.jpg" alt="image_01">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery02">
+                                        <a href="#">
+                                            <img src="images/gallery_02.jpg"alt="image_02">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery03">
+                                        <a href="#">
+                                            <img src="images/gallery_03.jpg"alt="image_03">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery04">
+                                        <a href="#">
+                                            <img src="images/gallery_04.jpg"alt="image_04">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery05">
+                                        <a href="#">
+                                            <img src="images/gallery_05.jpg"alt="image_05">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery06">
+                                        <a href="#">
+                                            <img src="images/gallery_06.jpg"alt="image_06">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery07">
+                                        <a href="#">
+                                            <img src="images/gallery_07.jpg"alt="image_07">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery08">
+                                        <a href="#">
+                                            <img src="images/gallery_08.jpg"alt="image_07">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery09">
+                                        <a href="#">
+                                            <img src="images/gallery_09.jpg"alt="image_07">
+                                        </a>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="gallery10">
+                                        <a href="#">
+                                            <img src="images/gallery_10.jpg"alt="image_07">
+                                        </a>
+                                    </div>
+                                </li>
+
+                               <li>
+                                    <div class="gallery11">
+                                        <ul>
+                                            <li><a href="#"><img src="images/gallery_12.jpg"alt="image_12"></a></li>
+                                            <li><a href="#"><img src="images/gallery_13.jpg"alt="image_13"></a></li>
+                                        </ul>
+                                    </div>
+                                </li>                      
+                            </ul>
+                        </div>
+
+                        <div class="more_btn">
+                                <a href="#" class="g_btn1" onclick="return false">more</a>
+                                <a href="#" class="g_btn2" onclick="return false">close</a>
+                        </div>                       
+                        
+                    </div>
+                </div> 
+            </main> 
+
+         <!-- ▼▼▼footer영역 start▼▼▼ -->
+            <footer>
+                <div id="footerIn">
+                    <!-- 푸터로고, 회사정보, SNS정보  -->
+                    <ul>
+                        <li>                
+                            <div class="sns">
+                                <ul>
+                                    <li><a href="https://search.naver.com/search.naver?where=post&sm=tab_jum&query=%ED%8C%9C%ED%95%98%EC%9A%B0%EC%8A%A4%ED%8E%9C%EC%85%98"><span class="naver">팜하우스</span></a></li>
+                                    <li><a href="http://instarix.com/tag/팜하우스펜션"><span class="insta">#팜하우스 #palmhouse</span></a></li>
+                                </ul>    
+                            </div>
+                        </li>                          
+                        
+                                                    <!-- 회사정보 -->
+                        <li>
+                            <div class="finfo">
+                                <span class="adress">간절곶 팜하우스　　울산광역시 울주군 서생면 간절곶 2길 14번길　　대표 김미경, 최성택　　전화번호 010-7251-8811　
+                                </span>
+                                <span class="license">농협 302-0986-7691-11 김미경　　사업자등록번호 610-28-19824　　통신판매업신고번호 제2017-울산-000호
+                                </span>
+                            </div> 
+                        </li>                         
+                    </ul>
+                </div>      
+            </footer>            
+        </div>
+    </body>
+
+    <script>   
+
+            $(".g_btn1").click(function(){
+                $(".g_btn2").css("display","block");
+                $(".g_btn1").css("display","none");     
+                $(".image_gallery").animate({height:"1378px"},1000);  
+            });
+        
+            $(".g_btn2").click(function(){
+                $(".g_btn1").css("display","block");
+                $(".g_btn2").css("display","none");     
+                $(".image_gallery").animate({height:"894px"},1000);  
+            });
+               
+         
+
+    /* 지도 부분 */
+        var mapOptions = {
+        center: new naver.maps.LatLng(35.361252, 129.356493),
+        zoom: 10
+    };
+
+    var map = new naver.maps.Map('map', mapOptions);
+
+
+    /* 원하는 곳에 마커 올리기 위치확인하고, 위치 변경해주기! */
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(35.361252, 129.356493),
+        map: map
+    });
+
+                        
+    </script>
+        
+</html>
+    

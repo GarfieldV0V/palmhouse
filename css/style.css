@@ -1,0 +1,694 @@
+@charset "utf-8";
+
+#wrapper{
+    width:100%;
+    overflow: hidden;
+}
+
+
+header{
+    width:100%;
+    border-bottom:1px solid #ccc;
+}
+
+#headerIn{
+    display:flex;
+    width:1200px;
+    height:120px;
+    margin:0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    position: relative;
+    width:178px;
+    height:82px;
+} 
+
+.gnb{
+    width:900px;
+    height:120px;
+}
+
+.gnb>ul{
+    position: relative;
+    display:flex;
+    width:800px;
+    left:50px;
+    justify-content: space-between;
+}
+
+.gnb a{
+    position: relative;
+    display:block;
+    width:60px;
+    height:54px;
+    font-size:16px;
+    text-align: center;
+    margin:3px 0;
+    top:60px;
+}
+
+.gnb a:hover{
+    color:#669966;
+    border-bottom:4px solid #669966;
+}
+
+.gnb>ul>li:last-child>a:hover{
+    color:#000;
+    border-bottom:0;
+}
+
+.gnb>ul>li:last-child{
+    position: relative;
+    bottom:15px;
+    left:5px;
+}
+
+.gnb>ul>li:last-child>a{
+    width:90px;
+    font-size:12px;
+    text-align:center;
+}
+
+.gnb>ul>li:last-child>a:before{
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    margin:0 auto;
+    background:url("../images/calendar.png") no-repeat center / cover;
+} 
+
+
+/* ▲▲ header 영역 끝 ▲▲ */
+
+/* ▼▼ main 영역 시작 ▼▼ */
+
+main{
+    width:100%;
+}
+
+#page1{
+    width:100%;
+    height:1000px;
+    background:#f9f9f9; 
+}
+
+.center{
+    position: relative;
+    top:140px; 
+    width:552px;
+    margin:0 auto;  
+}
+
+.center>ul>li:nth-child(1)>img{
+    position: relative;
+    left:89px;
+    width:374px;
+    height:374px;
+    margin:0 auto;
+/*     border:1px solid #000;  */
+    }
+
+.center>ul>li:nth-child(2)>img{
+    position: relative;
+    left:187px;
+    width:178px;
+    height:92px;
+    margin:0 auto;
+    margin-top: 80px;
+   }
+
+.center p{
+    display:block;
+    width:552px;
+    font-size:30px;
+    font-family: "나눔명조", sans-serif;
+    text-align: center;
+    margin-top:80px;
+    }
+
+#page2{
+    position:relative;
+    width:100%;
+    height:1000px;
+}
+
+#conts{
+    width:1620px;
+    margin:0 auto; 
+}
+
+#conts>div{
+    width:100%;
+}
+
+.conts1>ul>li>p{
+    width:100%;
+    text-align: center;
+    font-family: "나눔명조", sans-serif;
+    font-size:24px;
+    font-weight: 600;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+
+#map{
+    width:1620px;
+    height:600px;
+}
+
+
+.conts2{
+    width:100px;
+    border-bottom:1px solid #ccc;
+}
+
+.conts2>ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+}
+
+.left_text{
+    position: relative;
+    left:20px;
+}
+
+.cont2_tit{
+    font-size:16px;
+    color:gray;
+    font-family: "윤고딕120", sans-serif;
+}
+
+.cont2_addr{
+    font-size:24px;
+    color: #669966;
+    font-weight: 600;
+    font-family: "윤고딕120", sans-serif;
+}
+
+.right_btn{
+    display:flex;
+    width:260px;
+    justify-content: space-between;
+}
+
+.btn1{
+    display:block;
+    display:flex;
+    width:100px;
+    height:40px;
+    border-radius: 9px;
+    background: #669966;
+
+}
+
+.btn1>span{
+    position: relative;
+    top:-2px;
+    left:20px;
+    font-size:14px;
+    line-height: 40px;  
+    color:#fff;    
+}
+
+.btn1:before{
+    position: relative;
+    top:9px;
+    left:14px;
+    content: "";
+    display: block;
+    width:22px;
+    height:19px;
+    background:url("../images/icon_01.png") no-repeat -12px -62px / 66px 300px;
+}
+
+.btn2{
+    display:block;
+    width:140px;
+    height:40px;
+    border-radius: 9px;
+    background: #669966;
+} 
+
+
+.btn2>span{  
+    position: relative;
+    bottom:26px;
+    left:36px;
+    font-size:14px;
+    line-height: 40px;  
+    color:#fff;
+    text-align: center;
+}
+
+.btn2:before{
+    position: relative;
+    top:8px;
+    left:12px;
+    content: "";
+    display: block;
+    width:17px;
+    height:24px;
+    background:url("../images/icon_01.png") no-repeat -42px -47px / 66px 300px;
+}
+ 
+/* ▼▼▼오시는 길 - start▼▼▼ */
+.conts3{
+    height:78px;
+    border-bottom:1px solid #ccc;
+}
+
+.conts3>ul{
+    display:flex;
+}
+
+.conts3_left{
+    position: relative;
+    width:144px;
+    height:34px;
+    top:23px;
+    left:20px;
+    display:flex;
+}
+
+.conts3_left>span{
+    display:block;
+    width:22px;
+    height:32px;
+    background:url("../images/icon_01.png") no-repeat -12px -87px / 66px 300px;
+}
+
+
+.conts3_left>p{
+    position: relative;
+    top:2px;
+    left:10px;
+    font-size:16px;
+    font-family: "윤고딕120", sans-serif;
+}
+
+.conts3_right{
+    font-size:16px;
+    position: relative;
+    top:30px;
+    left:120px;
+}
+
+/* ▲▲▲ 오시는 길 - end ▲▲▲ */
+
+/* ▼▼▼ 전화번호 - start▼▼▼ */
+.conts4{
+    height:78px;
+    border-bottom:1px solid #ccc;
+}
+
+.conts4>ul{
+    display:flex;
+}
+
+.conts4_left{
+    display: flex;
+    position: relative;
+    width:144px;
+    height:34px;
+    top:24px;
+    left:20px;
+}
+
+.conts4_left>p{
+    position: relative;
+    top:2px;
+    left:10px;
+    font-size:16px;
+    font-family: "윤고딕120", sans-serif;
+}
+
+.conts4_left>span{
+    display:block;
+    width:20px;
+    height:29px;
+    background:url("../images/icon_01.png") no-repeat -12px -160px / 66px 300px;
+}
+
+.conts4_right>p{
+    position: relative;
+    font-size:16px;
+    top:30px;
+    left:120px;
+    font-family: "윤고딕120", sans-serif;
+}
+
+/* ▲▲▲ 전화번호 - end ▲▲▲ */
+
+/* ▼▼▼ 이용안내 - start▼▼▼ */
+
+.conts5{
+    position: relative;
+    height: 134px;
+    border-bottom:1px solid #ccc;
+}
+
+.conts5_left{
+    display:flex;
+    position:relative;
+    width:144px;
+    height:34px;
+    top:51px;
+    left:20px;
+/*     border:1px solid #000; */
+}
+
+.conts5_left>span{
+    position: relative;
+    display:block;
+    width:32px;
+    height:32px;
+    background:url("../images/icon_01.png") no-repeat -12px -228px / 66px 300px;
+}
+
+.conts5_left>p{
+    position: relative;
+    top:2px;
+    left:10px;
+    font-size:16px;
+    font-family: "윤고딕120", sans-serif;
+}
+
+
+.conts5_right{
+    margin-left:20px;
+    position: absolute;
+    width:960px;
+    top:26px;
+    left:230px;
+}
+
+.conts5_right>ul{
+    display:flex;
+    justify-content: space-between;
+}
+
+.conts5_right>ul>li{
+    width:80px;
+    height:100px;
+}
+
+.conts5_right p{
+    font-size:16px;
+    font-family: "윤고딕120", sans-serif;
+    text-align: center;
+/*     border:1px solid #000; */
+    width:80px;
+    height:20px;
+    margin-top:4px;    
+}
+
+
+
+.BBQ_icon{
+    display:block;
+    width:34px;
+    height:59px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -119px -2px / 206px 177px;
+}
+
+.BBQ p{
+    position: relative;
+    top:-1px;
+}
+
+
+.wifi_icon{
+    position: relative;
+    display:block;
+    top:8px;
+    width:51px;
+    height:43px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -5px -2px / 206px 177px;
+}
+
+.wifi p{
+    position: relative;
+    top:15px;
+
+}
+
+.couple_icon{
+    display:block;
+    width:45px;
+    height:55px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -62px -3px / 206px 177px;
+}
+
+.couple p{
+    position: relative;
+    top:3px;
+
+}
+
+.singleBBQ_icon{
+    display:block;
+    width:53px; 
+    height:45px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -77px -62px / 206px 177px;
+}
+
+.singleBBQ p{
+    position: relative;
+    top:13px;
+
+}
+
+.singlehouse_icon{
+    display:block;
+    width:57px; 
+    height:46px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -5px -58px / 206px 177px;
+}
+
+.singlehouse p{
+    position: relative;
+    top:12px;
+
+}
+
+.jacuzi_icon{
+    display:block;
+    width:60px; 
+    height:48px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -10px -111px / 206px 177px;
+}
+
+.jacuzi p{
+    position: relative;
+    top:10px;
+
+}
+
+
+.garden_icon{
+    display:block;
+    width:58px; 
+    height:53px;
+    margin:0 auto;
+    background:url("../images/icon_02.png") no-repeat -85px -115px / 206px 177px;
+}
+
+.garden p{
+    position: relative;
+    top:5px;
+}
+
+/* ▲▲▲ 이용안내 - end ▲▲▲ */
+
+/* ▼▼▼ 이미지 갤러리 - start ▼▼▼  */
+
+/* #page4{
+    height:1140px;
+} */
+
+#page4_conts{
+    width:1620px;
+    height:auto;
+    margin:0 auto;
+}
+
+.gallery_text{
+    width:100%;
+    text-align: center;
+    font-family: "나눔명조", sans-serif;
+    font-size:24px;
+    font-weight:600;
+    padding:20px 0;
+}
+
+.image_gallery{
+    width:100%;
+    height:894px;
+    overflow:hidden;
+}
+
+.image_gallery>ul{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.image_gallery div{
+    margin-bottom:20px;
+}
+
+.gallery11{
+    width:230px;
+    height:480px;
+}
+
+.gallery11 li:nth-child(1){
+    margin-bottom:20px;
+}
+
+
+
+/* ▲▲▲ 이미지갤러리 - end ▲▲▲ */
+
+/* ▼▼▼ 더보기 버튼 ▼▼▼ */
+
+.more_btn{
+    margin:20px 0;
+}
+
+.g_btn1{
+    display:block;
+    width:100px;
+    height:30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    margin:0 auto;
+}
+
+.g_btn2{
+    display:none;
+    width:100px;
+    height:30px;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    margin:0 auto;
+
+}
+
+
+/* ▼▼▼footer영역 start▼▼▼ */
+
+#footerIn{
+    height:200px;
+    background:#666666;
+}
+
+.sns{
+    position: relative;
+    top:30px;
+    left:150px;
+    width:722px;
+    height:60px;
+}
+
+.sns ul{
+    display:flex;
+    width:600px;
+    justify-content: space-between;
+}
+
+.sns li:first-child{
+    position: relative;
+    display:flex;
+    width:220px;
+    height:60px;
+    border:1px solid #ccc;   }
+
+.sns>ul>li:first-child>a{
+    display:block;
+    width:160px;
+    height:60px;
+    border-right:1px solid #ccc;    
+    font-size:24px;
+    line-height:55px;
+    color:#ccc; 
+    font-family: "윤고딕", sans-serif;
+    text-align: center;
+}
+
+.naver:after{
+    position: absolute;
+    top:14px;
+    right:14px;
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    background:url("../images/icon_03.png") no-repeat -6px -9px / 100px 100px;
+}
+
+.sns li:last-child{
+    position: relative;
+    width:360px;
+    height:60px;
+    border:1px solid #ccc;
+ }
+
+.sns>ul>li:last-child>a{
+    display:block;
+    width:280px;
+    height:60px;
+    border-right:1px solid #ccc;
+    font-size:24px;
+    line-height:55px;
+    padding-left:20px;
+    color:#ccc;
+    font-family: "윤고딕", sans-serif;
+}
+
+.insta:after{
+    position: absolute;
+    top:14px;
+    right:14px;
+    content:"";
+    display:block;
+    width:30px;
+    height:30px;
+    background:url("../images/icon_03.png") no-repeat -48px -54px / 100px 100px;
+
+}
+.finfo>span{
+    position: relative;
+    top:60px;
+    left:150px;
+    display:block;
+    color:#ccc;
+    font-size:14px;
+    font-family: "윤고딕120", sans-serif;
+}
+
+.license{
+    margin-top:10px;
+}
+
+
+
+
+
+
+
